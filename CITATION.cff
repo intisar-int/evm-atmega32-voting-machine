@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Secure Electronic Voting Machine on the ATmega32 (EEE 373L, Group 02)"
+title: "Secure Electronic Voting Machine on the ATmega32"
 type: software
 authors:
   - given-names: "Intisar"
