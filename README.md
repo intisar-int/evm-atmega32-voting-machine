@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 **BRAC University · Department of Electrical and Electronic Engineering**
-**EEE 373L – Embedded System Design Laboratory · Summer 2025 · Group 02**
+**EEE 373L – Embedded System Design Laboratory · Summer 2025**
 
 <p align="center">
   <img src="docs/figures/hardware_prototype.jpg" width="620" alt="ATmega32 EVM prototype on an AVR mini-kit with 4x3 keypad and 16x2 LCD showing the countdown timer"/>
@@ -366,8 +366,7 @@ docs/figures/                      figures used in this README
 
 ## 13. Authors, references, licence
 
-**Group 02, EEE 373L, Summer 2025 (submitted 7 Sep 2025):**
-Intisar Ahmad · Nusrat Sultana · Sinan Iqbal · Farhan Masud · Iftekhar Ahmed.
+**Contributors** (EEE 373L, Summer 2025, submitted 7 Sep 2025): Intisar, Nusrat, Sinan, Farhan and Iftekhar.
 
 **References**
 
