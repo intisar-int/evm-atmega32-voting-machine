@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+# CodeVisionAVR / Proteus build products and backups
+Debug/
+*.obj
+*.cof
+*.sym*
+*.lst
+*.map
+*.cwp
+*.cci
+*.cbi
+*.prj~
+*.c~
+Project Backups/
+*.workspace.xml

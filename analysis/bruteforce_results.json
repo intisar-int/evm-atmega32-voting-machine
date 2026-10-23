@@ -1,0 +1,62 @@
+{
+  "t_key=0.15s": {
+    "firmware (none)": {
+      "mean_hours": 2.708743055555556,
+      "worst_hours": 5.416805555555555,
+      "window_attempts": 57,
+      "window_p": 0.0057
+    },
+    "3 tries, 30 s x2^n, cap 15 min": {
+      "mean_hours": 417.56531776388886,
+      "worst_hours": 836.2863888888888,
+      "window_attempts": 9,
+      "window_p": 0.0009
+    },
+    "3 tries, 60 s x2^n, cap 1 h": {
+      "mean_hours": 1663.2359019305554,
+      "worst_hours": 3332.0780555555557,
+      "window_attempts": 6,
+      "window_p": 0.0006
+    }
+  },
+  "t_key=0.3s": {
+    "firmware (none)": {
+      "mean_hours": 3.3338055555555557,
+      "worst_hours": 6.666805555555555,
+      "window_attempts": 44,
+      "window_p": 0.0044
+    },
+    "3 tries, 30 s x2^n, cap 15 min": {
+      "mean_hours": 418.1903802638889,
+      "worst_hours": 837.5363888888888,
+      "window_attempts": 9,
+      "window_p": 0.0009
+    },
+    "3 tries, 60 s x2^n, cap 1 h": {
+      "mean_hours": 1663.8609644305557,
+      "worst_hours": 3333.3280555555557,
+      "window_attempts": 6,
+      "window_p": 0.0006
+    }
+  },
+  "t_key=0.6s": {
+    "firmware (none)": {
+      "mean_hours": 4.583930555555556,
+      "worst_hours": 9.166805555555555,
+      "window_attempts": 31,
+      "window_p": 0.0031
+    },
+    "3 tries, 30 s x2^n, cap 15 min": {
+      "mean_hours": 419.4405052638889,
+      "worst_hours": 840.0363888888888,
+      "window_attempts": 9,
+      "window_p": 0.0009
+    },
+    "3 tries, 60 s x2^n, cap 1 h": {
+      "mean_hours": 1665.1110894305555,
+      "worst_hours": 3335.8280555555557,
+      "window_attempts": 6,
+      "window_p": 0.0006
+    }
+  }
+}

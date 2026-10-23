@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Secure Electronic Voting Machine on the ATmega32 (EEE 373L, Group 02)"
+type: software
+authors:
+  - given-names: "Intisar"
+    family-names: "Ahmad"
+  - given-names: "Nusrat"
+    family-names: "Sultana"
+  - given-names: "Sinan"
+    family-names: "Iqbal"
+  - given-names: "Farhan"
+    family-names: "Masud"
+  - given-names: "Iftekhar"
+    family-names: "Ahmed"
+repository-code: "https://github.com/intisar-int/evm-atmega32-voting-machine"
+license: MIT
+date-released: 2025-09-07
+abstract: "ATmega32-based electronic voting machine with keypad voter authentication, push-button ballots, timed sessions, admin pause/resume and tie-aware result display; simulated in Proteus and programmed in CodeVisionAVR C."

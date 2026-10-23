@@ -1,0 +1,27 @@
+digraph EVM {
+  rankdir=LR; bgcolor="white"; pad=0.3; nodesep=0.45; ranksep=0.6;
+  node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#35557f", fontname="Helvetica", fontsize=11];
+  edge [color="#444444", fontname="Helvetica", fontsize=9];
+
+  BOOT [label="BOOT\nports, Timer1 CTC,\nLCD splash 2 s", fillcolor="#f4f4f4"];
+  LOGIN [label="LOGIN\n'Admin Password:'\nread 4 keys"];
+  WAIT [label="WAIT_START\n'Press * to Start'"];
+  ID [label="ID_ENTRY\n'Enter ID or # to Pause'\n(non-blocking keypad scan)", fillcolor="#e6f4ea", color="#2e7d32"];
+  BALLOT [label="BALLOT\n'Use Buttons to Vote'\nPA0=BNP PA1=JMT PA2=NCP", fillcolor="#e6f4ea", color="#2e7d32"];
+  PW [label="PAUSE_PW\n'Enter Pass' (echo *)\n30 s timeout", fillcolor="#fff4e0", color="#b26a00"];
+  PAUSED [label="PAUSED\ncountdown frozen\n'Press * to Resume'", fillcolor="#fff4e0", color="#b26a00"];
+  END [label="ENDED\nFinal Scores <-> Result\n(2 screens, 4 s each, forever)", fillcolor="#fde8e8", color="#aa3333"];
+
+  BOOT -> LOGIN;
+  LOGIN -> LOGIN [label="wrong PIN\n'Wrong Password!' 1.5 s"];
+  LOGIN -> WAIT [label="PIN = 1357\n'Access Granted!' 1.5 s"];
+  WAIT -> ID [label="'*'  (minutes=2, sei)"];
+  ID -> ID [label="invalid / duplicate ID\n1.5 s message"];
+  ID -> BALLOT [label="valid, unused ID"];
+  BALLOT -> ID [label="button press:\nvotes[c]++, flag=1\n'Thank You!' 1.5 s"];
+  ID -> PW [label="'#'"];
+  PW -> ID [label="wrong PIN / timeout"];
+  PW -> PAUSED [label="correct PIN"];
+  PAUSED -> ID [label="'*'"];
+  ID -> END [label="00:00 or 5 votes cast"];
+}
